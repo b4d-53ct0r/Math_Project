@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <style>
+        label{
+            color:white;
+        }
+        input[name=function]{
+            width: 100%;
+        }
+        table
+        {
+            margin:auto;
+        }
+        form{
+            padding-top: 5%;
+            font-size: 30px;
+        }
+        input{
+            border-radius: 5px;
+
+        }
+        input:focus{
+            outline:none;
+        }
+        input[type=submit]{
+            padding:20px;
+            width: 15%;
+            display: block;
+            margin:auto;
+            margin-top: 2%;    
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1 style="color:white;text-align: center;">
+        Développement limité
+    </h1>
+    <form action="DL_result" method="get">
+        <table width="75%">
+            <tr>
+                <td>
+                    <label for="function string">Votre Fonction : </label>
+                </td>
+                <td>
+                    <input type="text" name="function" id="" placeholder="Fonction">
+        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Ordre N">Ordre: </label>
+                </td>
+                <td>
+                    <input type="number" name="N" id="" step=any placeholder="Order N">
+        
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <label for="Un point A">Un point A : </label>
+        
+            </td>
+            <td>
+                <input type="number" name="A" id="" step=any placeholder="Un point A">
+            </td>
+        </tr>
+        
+        </table>
+        <input type="submit" value="Trouver" class="btn btn-primary">
+
+
+        
+    </form>
+    
+</body>
+</html>
