@@ -55,7 +55,7 @@ class Ui_instruction(object):
 "•    cosh: hyperbolic cosine\n"
 "•    e: euler\'s number raised to the power (e^x)\n"
 "•    floor: nearest lower integer\n"
-"•    log: logarithmus naturalis (base e)\n"
+"•    ln: logarithmus naturalis (base e)\n"
 "•    log10: logarithm (base 10)\n"
 "•    log2: logarithme naturel (base 2)\n"
 "•    sin: sine\n"
